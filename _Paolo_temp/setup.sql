@@ -3,6 +3,7 @@ drop table services;
 drop table bills;
 drop table moorings;
 drop table boats;
+drop table history;
 drop table users;
 
 drop sequence seq_users;
@@ -63,6 +64,35 @@ create table bill_service (
         constraint bill_id_fk references bills(bill_id),
     service_id integer
         constraint service_id_fk references services(service_id));                
+
+create table history (
+    history_date date,
+    h_first_name VARCHAR2(20),
+    h_last_name VARCHAR2(20),
+    h_id_number VARCHAR2(10),
+    h_description VARCHAR2(100));
+
+    
+create or replace trigger insert_new_user
+after insert 
+    on users 
+    for each row
+begin
+    insert into history(history_date, h_first_name, h_last_name, h_id_number, h_description)
+    values (sysdate, :new.first_name, :new.last_name, :new.id_number, 'New user in mooring: ');
+    -- TODO add mooring number in history after 
+    -- || (select m.mooring_id
+    --from users u join boats b using(user_id) 
+    --join moorings m using(boat_id)
+    -- where boat_id= (select boat_id
+    --  from boats where id_number=
+    -- :new.id_number)));                     TODO
+    
+end insert_new_user;        
+/
+ 
+
+ 
         
 --creation of sequences
 create sequence seq_users start with 101;
@@ -73,7 +103,7 @@ create sequence seq_bills start with 101;
 
 --insert of users
 insert into users(user_id, first_name, last_name, id_number)
-    values(seq_users.nextval, 'Pippo', 'Brutti', 'CA7383oeL');
+    values(seq_users.nextval, 'Pippo', 'Brutti', 'CA7382oeL');
     
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Paolo', 'Riva','CA7763oeL');
@@ -260,6 +290,11 @@ commit;
 select count(rowid) as "Free Moorings" from moorings where boat_id is null; -- returns the free moorings
 
 --test negative width
-insert into boats(boat_id, boat_type, boat_length, boat_width, user_id)
-    values(seq_boats.nextval, 'Racing Boat', 19, -1, 105);       
+--insert into boats(boat_id, boat_type, boat_length, boat_width, user_id)
+ --   values(seq_boats.nextval, 'Racing Boat', 19, -1, 105);     
+    
+    
+--test trigger new user
+--insert into users(user_id, first_name, last_name, id_number)
+  --  values(seq_users.nextval, 'Pippo', 'Baudo', 'CA7992oeL');
     
