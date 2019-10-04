@@ -155,14 +155,11 @@ begin
     insert into history(history_date, h_first_name, h_last_name, h_id_number, h_description)
 
     values (sysdate, :new.first_name, :new.last_name, :new.id_number, 'New user in mooring: '|| (select mooring_id
-    from moorings where boat_id = (select boat_id from boats where user_id= :new.user_id)) || 'h');
+    from moorings where boat_id = (select boat_id from boats where user_id=:new.user_id)) || 'h');
     end insert_new_user;        
 
 /
 --creation of sequences
-
-select mooring_id
-from moorings where boat_id = (select boat_id from boats where user_id=101);
 
 create sequence seq_users start with 101;
 
