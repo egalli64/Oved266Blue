@@ -1,6 +1,10 @@
---to run from sqlplus as BLUE
---blue should be created as follow:
---create user blue identified by password account unlock;
+--run it from sqlplus as BLUE
+--BLUE should be created as follow:
+--
+--create user BLUE identified by password account unlock;
+--grant connect, resource to BLUE;
+--alter user BLUE quota unlimited on users;
+--
 
 
 drop table bill_service;
@@ -99,12 +103,16 @@ create sequence seq_bills start with 101;
 --insert of users
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Pippo', 'Brutti', 'CA7382oeL');
+    
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Paolo', 'Riva','CA7763oeL');
+    
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Edoardo', 'Errani','CA7385feL');
+    
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Sergio', 'Evangelista','CA4477oeI');
+    
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Alessandro', 'Armato','CA6666oeL');
     

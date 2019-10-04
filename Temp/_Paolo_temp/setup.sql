@@ -1,6 +1,10 @@
---to run from sqlplus as BLUE
---blue should be created as follow:
---create user blue identified by password account unlock;
+--run it from sqlplus as BLUE
+--BLUE should be created as follow:
+--
+--create user BLUE identified by password account unlock;
+--grant connect, resource to BLUE;
+--alter user BLUE quota unlimited on users;
+--
 
 
 drop table bill_service;
