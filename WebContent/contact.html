@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+</head>
+<body>
+
+	<h1>Contact us!</h1>
+	<p>Complete the following form to contact us</p>
+
+	<form action="/comment" method="post">
+		<label for="First name">First name:</label> 
+		<input type="text" id="fname" name="sender" required> 
+		
+			<br/>
+		
+		<label>Last name:</label> 
+		<input type="text" id="lname" name="sender" required>
+		
+			<br/>
+		
+		<label id="em">Email:</label> 
+		<input type="text" id="email" name="sender" required> 
+		
+			<br/>
+		
+		<label >Address:</label> 
+		<input type="text" id="address" name="sender">
+		
+			<br/>
+		
+		<label id="ph">Phone number:</label> 
+		<input type="text" id="phone" name="sender">
+         <br/>
+		<label>Message:</label> 
+		<br/>
+		<textarea id="msg" name="message" rows="20" cols="80" required></textarea>
+		<br/>
+		<button type="submit">Send</button>
+	</form>
+	     <br/>
+	
+	<p>Moorings &amp; Rani</p>
+	<p>Via Sebastiano Caboto </p>
+	<p> 09125 Cagliari</p>
+	<p>Italy</p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.6767160348045!2d9.122916890153768!3d39.20479398974272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEyJzE3LjMiTiA5wrAwNycyOC4xIkU!5e0!3m2!1sit!2sit!4v1570629384179!5m2!1sit!2sit" width="600" height="450" style="border:0;" ></iframe>
+
+</body>
+</html>
