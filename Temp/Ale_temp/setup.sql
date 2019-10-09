@@ -144,7 +144,11 @@ insert into users(user_id, first_name, last_name, id_number)
 
 insert into users(user_id, first_name, last_name, id_number)
     values(seq_users.nextval, 'Batman', null,'CA9653oeL');
+    
     delete from users where id_number='CA9653oeL';
+    
+insert into users(user_id, first_name, last_name, id_number)
+    values(seq_users.nextval, 'Batman', null,'CA9653oeL');    
 
 --insertion of services
 insert into services(service_id, service_cost, service_type)
@@ -221,7 +225,7 @@ insert into boats(boat_id, boat_type, boat_length, boat_width, user_id)
     values(seq_boats.nextval, 'Kanoe', 3, 1, 107);    
 
 insert into boats(boat_id, boat_type, boat_length, boat_width, user_id)
-    values(seq_boats.nextval, 'Batsubmarine', 50, 5, 108);        
+    values(seq_boats.nextval, 'Batsubmarine', 50, 5, 109);        
 
 insert into boats(boat_id, boat_type, boat_length, boat_width, user_id)
     values(seq_boats.nextval, 'Racing Boat', 19, 1, 105);            
