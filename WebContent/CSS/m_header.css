@@ -1,0 +1,20 @@
+.header {
+	 margin: 0; padding: 0;
+  background: white url(http://www.aberdourboatclub.co.uk/_/rsrc/1472153387691/home/2016%2008%2026%20Down%20Load%20001.jpg) no-repeat center center;
+max-width:100%;
+max-height:100%;
+ text-align: center;
+   height:500px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding-top: 160px;
+
+}
+
+.header h1 {
+  font-family: sans-serif;
+  color: white;
+  
+}
+
+
