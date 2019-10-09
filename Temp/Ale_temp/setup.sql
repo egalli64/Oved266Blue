@@ -116,7 +116,7 @@ create sequence seq_users start with 101;
 create sequence seq_services start with 101;
 create sequence seq_boats start with 101;
 create sequence seq_moorings start with 101;
-create sequence seq_bills start with 101;
+create sequence seq_bills start with 101; 
 
 --insert of users
 
