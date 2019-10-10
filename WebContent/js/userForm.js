@@ -9,6 +9,12 @@ $(".parentNode").click(function() {
   
   
 $(".grandparentNode").click(function()   {
-	  $(".childNode").hide(function (){}); 
+	if ( $( "#exampleDropdownFormPassword1" ).is(":visible")) {
+		 
+			$(".childNode").hide(function (){}); 
+	 
+	}
+	
+	  
 });})
  
