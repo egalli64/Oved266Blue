@@ -16,5 +16,14 @@
             out.print(LocalTime.now()); 
         %>
     </h1>
+ 
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-1"> <a href="./index.html">HOME</a></div>
+		<div class="col-11"></div>
+	</div>
+</div>   
+    
+    
 </body>
 </html>
