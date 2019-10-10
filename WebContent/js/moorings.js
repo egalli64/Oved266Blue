@@ -2,19 +2,14 @@
  * 
  */
 
-$(function (){
-	var c = document.getElementsByClassName("rowOnMoorings");
+$(function() {
+//	var c = document.getElementsByClassName("rowOnMoorings");
+	console.log('Jquery working!');
 	
 	
-	$('#rowMoorings').hide();
-	
-	
-	
-	
-	
-	
-	
-	
+	$("#Test").hover(function() {
+		console.log('Test confirmed');
+	});
 	
 });
 
