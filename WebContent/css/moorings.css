@@ -1,5 +1,12 @@
 body {
-	background: #ECFFFF;
+	/* background: #ECFFFF; */
+	background: white url(https://www.toptal.com/designers/subtlepatterns/patterns/hypnotize.png) 0 0;/*  0px 0px/350px 350px; */
+  	/*width: 50%;*/
+  	margin: 0;
+  	height: 300px;
+  	padding-top: 20px;
+  	box-sizing: border-box;
+ /*  	-webkit-animation: slide 20s linear infinite; */
 }
 h3 {
 	font-weight: 300;
@@ -10,4 +17,17 @@ h3 {
 h5 {
 	font-weight: 50;
 	line-height: 1.2;
+}
+
+un {
+	color: #c98736;
+}
+
+bgLight {
+	background: #ECFFFF;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px -150px; }
 }
