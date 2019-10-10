@@ -1,12 +1,12 @@
 body {
 	/* background: #ECFFFF; */
-	background: white url(https://www.toptal.com/designers/subtlepatterns/patterns/hypnotize.png) 0 0;/*  0px 0px/350px 350px; */
+	background: white url(https://www.toptal.com/designers/subtlepatterns/patterns/white-waves.png) 0 0;/*  0px 0px/350px 350px; */
   	/*width: 50%;*/
   	margin: 0;
   	height: 300px;
   	padding-top: 20px;
   	box-sizing: border-box;
- /*  	-webkit-animation: slide 20s linear infinite; */
+ 	-webkit-animation: slide 20s linear infinite;
 }
 h3 {
 	font-weight: 300;
@@ -29,5 +29,5 @@ bgLight {
 
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
-    to { background-position: -400px -150px; }
+    to { background-position: -200px 0px; }
 }
