@@ -1,4 +1,4 @@
-$(function() {
+$(function() { 
 	// check number
 	$('button').click(function() {
 		$('p').remove();
@@ -9,6 +9,5 @@ $(function() {
  		event.preventDefault();
       }
 	});
-	// check email
 	
 });
