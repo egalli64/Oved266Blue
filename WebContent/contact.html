@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-<!-- <script type="text/javascript" src="js/script.js"></script>-->
 <link rel="stylesheet" type="text/css" href="./css/moorings.css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
@@ -16,11 +15,11 @@
 	</div>
 </div>
 <body>
-  <div>
+  <div class="container-fluid">
 	<h1>Complete the following form to contact us!</h1>
   </div>
-  <div>
-	<form action="/comment" method="post"> 
+  <div class="container-fluid">
+	<form action="./timer.jsp" method="post"> 
 	   <label>First name:</label>
 	   <input type="text" name="sender" required> 
 	   <br/>
@@ -28,7 +27,7 @@
 	   <input type="text" name="sender" required> 
 	   <br/>
 	   <label>Email:</label> 
-	   <input type="text" name="sender" required> 
+	   <input type="email" name="sender" required> 
 	   <br/>
 	   <label>Address:</label> 
 	   <input type="text" name="sender">
@@ -43,6 +42,7 @@
 	   <button type="submit">Submit</button>
 	</form>
 	</div>
+   <div class="container-fluid">
 	<br/>
 	<h1>Or visit us!</h1>
 	<p>Moorings &amp; Rani</p>
@@ -50,5 +50,6 @@
 	<p> 09125 Cagliari</p>
 	<p>Italy</p>
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.6767160348045!2d9.122916890153768!3d39.20479398974272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDEyJzE3LjMiTiA5wrAwNycyOC4xIkU!5e0!3m2!1sit!2sit!4v1570629384179!5m2!1sit!2sit" width="600" height="450" style="border:0;" ></iframe>
+   </div>
 </body>
 </html>
