@@ -16,6 +16,7 @@
 <link rel="stylesheet" type="text/css" href="./css/m_header.css" />
 <link rel="stylesheet" type="text/css" href="./css/dropdown.css" />
 <script type="text/javascript" src="./js/userForm.js"></script>
+<script type="text/javascript" src="./js/adminForm.js"></script>
 <script type="text/javascript" src="./js/userPosition.js"></script>
 <script type="text/javascript" src="./js/dropdown.js"></script>
 
@@ -34,13 +35,13 @@
 						<ul>
 							<li>
 							<li>
-								<div class="active parentNode">
+								<div class="active parentNode grandparentNode">
 									<a href='#'>User Login</a>
 								</div>
 
 							</li>
 
-							<li><div class="active grandparentNode">
+							<li><div class="active parentNodeAdm grandparentNodeAdm">
 									<a href='#'>Administrator</a>
 								</div></li>
 
@@ -78,6 +79,9 @@
 		</div>
 	</div>
 
+
+<!-- User Login Form -->
+
 	<div class="row childNode">
 		<div class="childNode dropdown-menu" id=form>
 			<form class="px-4 py-3 childNode">
@@ -106,6 +110,35 @@
 		</div>
 	</div>
 
+<!-- Admin Login Form -->
+
+<div class="row childNodeAdm">
+		<div class="childNodeAdm dropdown-menu" id=form>
+			<form class="px-4 py-3 childNodeAdm">
+				<div class="form-group childNodeAdm">
+					<label for="exampleDropdownFormEmail2">Email address</label> <input
+						type="email" class="form-control1" id="exampleDropdownFormEmail2"
+						placeholder="email@example.com">
+				</div>
+				<div class="form-group">
+					<label for="exampleDropdownFormPassword">Password</label> <input
+						type="password" class="form-control"
+						id="exampleDropdownFormPassword">
+				</div>
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="dropdownCheck">
+					<label class="form-check-label" for="dropdownCheck">
+						Remember me </label>
+				</div>
+				<button type="submit" class="btn btn-primary">Sign in</button>
+			</form>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">New around here? Sign up</a><br />
+			<a class="dropdown-item" href="#">Forgot password?</a><br /> <a
+				class="dropdown-item grandparentNodeAdm" style="color: red;" href="#">Close
+				Form</a>
+		</div>
+	</div>
 
 	<img class="d-block mx-auto mb-4"
 		src="https://messaufficio.com/wp-content/uploads/2018/01/internet-logo-300x300.png"
