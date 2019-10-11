@@ -27,6 +27,11 @@ bgLight {
 	background: #ECFFFF;
 }
 
+.linkBottom {
+	color: blue;
+	text-decoration:underline;
+}
+
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
     to { background-position: -250px 0px; }
