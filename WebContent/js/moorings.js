@@ -1,7 +1,3 @@
-/**
- * 
- */
-
 $(function() {
 //	var c = document.getElementsByClassName("rowOnMoorings");
 	console.log('Jquery working!');
@@ -34,10 +30,3 @@ $(function() {
 	});
 	
 });
-
-
-
-
-
-
-
