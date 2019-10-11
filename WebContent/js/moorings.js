@@ -29,7 +29,7 @@ $(function() {
 	$(".linkBottom").mouseenter(function() {
 		$(".linkBottom").attr("style","color: red;");
 	}).mouseleave(function() {
-		$(".linkBottom").attr("style","color: blue;");
+		$(".linkBottom").attr("style","color: black;");
 	});
 	
 });
