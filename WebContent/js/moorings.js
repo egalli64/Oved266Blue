@@ -23,8 +23,7 @@ $(function() {
 	$(".linkBottom").click(function() {
 		console.log("click on go to top");
 		$(window).scrollTop(0);
-		$(location).attr('href',"https://LeanBoilingQuotes--five-nine.repl.co");
-		//https://LeanBoilingQuotes--five-nine.repl.co
+		//$(location).attr('href',"https://LeanBoilingQuotes--five-nine.repl.co");
 	});
 	
 	//Changes the bottom message of pages "Go to top" colors when the mouse is over
