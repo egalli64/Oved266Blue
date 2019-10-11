@@ -9,11 +9,10 @@ $(function() {
 	})
 
 	$(".grandparentNode").click(function() {
-		if ($("#exampleDropdownFormPassword1").is(":visible")) {
+		if ($("#exampleDropdownFormEmail2").is(":visible")) {
 
-			$(".childNode").hide(function() {
+			$(".childNodeAdm").hide(function() {
 			});
-
 		}
 
 	});
