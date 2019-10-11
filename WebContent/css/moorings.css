@@ -10,8 +10,9 @@ body {
 }
 h3 {
 	font-weight: 300;
+	font-size: 3em;
 	line-height: 1.2;
-	padding: 40px;
+	padding: 25px;
 	align: center;
 }
 h5 {
