@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact us</title>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/moorings.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<script type="text/javascript" src="/Oved266Blue/js/moorings.js"></script>
+<script type="text/javascript" src="/Oved266Blue/js/password.js"></script>
+</head>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-1">
+			<a href="./index.html">HOME</a>
+		</div>
+		<div class="col-11"></div>
+	</div>
+</div>
+<body>
+
+	<div class="container-fluid">
+			<div class="row">
+		
+			<div class="col-1"></div> <!-- first column with length 1 -->
+			<div class="col-10">  <!-- start of column with length 10 -->
+	               <hr />
+				<h2>Create new Admin</h2>
+				<form action="/Oved266Blue/write" method="post">
+
+		<div class="row">
+			<div class="col-2 text-right"><label>First name:</label></div>
+			<div class="col-7 text-left"><input type="text" name="fname" required></div>
+			<div class="col-7 text-center"></div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-2 text-right"><label>Last name:</label></div>
+			<div class="col-7 text-left"><input type="text" name="lname"></div>
+			<div class="col-7 text-center"></div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-2 text-right"><label>Email:</label></div>
+			<div class="col-7 text-left"><input type="email" name="email" placeholder="example@service.com" required></div>
+			<div class="col-7 text-center"></div>
+
+		</div>
+
+   <fieldset>
+		<div class="row">
+			<div class="col-2 text-right" ><label>Password</label></div>
+			<div class="col-7 text-left" ><input type="password" name="password" id="password" required></div>
+			<div class="col-7 text-center"></div>
+
+		</div>
+		
+		<div class="row">
+			<div class="col-2 text-right"><label>Repeat Password</label></div>
+			<div class="col-7 text-left"><input type="password" name="cpassword"  id="confirm_password" required></div>
+			<div class="col-7 text-center"></div>
+
+		</div> 
+	
+		
+    <button type="submit" class="pure-button pure-button-primary">Register</button>
+	   </fieldset>
+	</form>
+	
+	<hr />
+	
+<div class="text-center linkBottom">Go to top</div>
+</body>
+</html>
