@@ -13,7 +13,6 @@ $(function() {
 
 			$(".childNodeAdm").hide(function() {
 			});
-
 		}
 
 	});
