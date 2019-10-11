@@ -29,5 +29,5 @@ bgLight {
 
 @-webkit-keyframes slide {
     from { background-position: 0 0; }
-    to { background-position: -200px 0px; }
+    to { background-position: -250px 0px; }
 }

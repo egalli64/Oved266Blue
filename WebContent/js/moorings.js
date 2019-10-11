@@ -13,7 +13,7 @@ $(function() {
 		//console.log(c[i].getElementsByClassName("text-danger"));
 		if(c[i].getElementsByClassName("text-danger").length != 0) {
 			let a = c[i].getElementsByClassName("cartMooring");
-			$(a).hide();		
+			$(a).hide();
 		}
 	}
 });
