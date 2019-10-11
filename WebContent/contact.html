@@ -15,16 +15,46 @@
 	</div>
 </div>
 <body>
-  <div class="container-fluid">
-	<h1>Complete the following form to contact us!</h1>
-  </div>
-  
-<div class="row">
-<div class="col-1">1</div>
-<div class="col-10">10</div>
-<div class="col-1">1</div>
+ 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-1">1</div>
+		<div class="col-10 text-center"><h2>Complete the following form to contact us!</h2></div>
+		<div class="col-1">1</div>
+	</div>
+	<form action="/Oved266Blue/write" method="post">
+		<div class="row">
+			<div class="col-2 text-right"><label>First name:</label></div>
+			<div class="col-2 text-left"><input type="text" name="fname" required></div>
+			<div class="col-7 text-center"></div>
+		</div>
+		<div class="row">
+			<div class="col-2 text-right"><label>Last name:</label></div>
+			<div class="col-2 text-left"><input type="text" name="lname" required></div>
+			<div class="col-7 text-center"></div>
+		</div>
+		<div class="row">
+			<div class="col-2 text-right"><label>Email:</label></div>
+			<div class="col-2 text-left"><input type="email" name="email" required></div>
+			<div class="col-7 text-center"></div>
+		</div>
+		<div class="row">
+			<div class="col-2 text-right"><label>Address:</label></div>
+			<div class="col-2 text-left"><input type="email" name="email" required></div>
+			<div class="col-7 text-center"></div>
+		</div>
+		<div class="row">
+			<div class="col-2 text-right"><label>Phone number:</label></div>
+			<div class="col-2 text-left"><input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone"></div>
+			<div class="col-7 text-center"></div>
+		</div>
+		<div class="row">
+			<div class="col-6"><label>Message:</label><br/><textarea name="message" rows="10" cols="80" required></textarea></div>
+			<div class="col-6"></div>
+		</div>
+	</form>
 </div>
-  
+<br /><br /><br /><br /><br />
   
   
   <div class="container-fluid">
