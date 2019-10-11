@@ -17,12 +17,13 @@
 <link rel="stylesheet" type="text/css" href="./css/dropdown.css" />
 <script type="text/javascript" src="./js/userForm.js"></script>
 <script type="text/javascript" src="./js/adminForm.js"></script>
+<script type="text/javascript" src="./js/loginCloser.js"></script>
 <script type="text/javascript" src="./js/userPosition.js"></script>
 <script type="text/javascript" src="./js/dropdown.js"></script>
 
 </head>
 <body>
-	<div class="header grandparentNode">
+	<div class="header closer">
 		<h1>
 			<font size="+9">Boat Club &amp; Rani</font>
 		</h1>
@@ -48,8 +49,7 @@
 						</ul></li>
 
 
-					<li class='active grandparentNode'><a href='#'>Our
-							Moorings</a>
+					<li class='active closer'><a href='#'>Our Moorings</a>
 						<ul>
 							<li><a href='#'>Small Moorings</a>
 								<ul>
@@ -95,13 +95,13 @@
 						type="password" class="form-control"
 						id="exampleDropdownFormPassword1">
 				</div>
-				
+
 				<button type="submit" class="btn btn-primary">Sign in</button>
 			</form>
 			<div class="dropdown-divider"></div>
 			<a class="dropdown-item" href="#">New around here? Sign up</a><br />
 			<a class="dropdown-item" href="#">Forgot password?</a><br /> <a
-				class="dropdown-item grandparentNode" style="color: red;" href="#">Close
+				class="dropdown-item closer" style="color: red;" href="#">Close
 				Form</a>
 		</div>
 	</div>
@@ -110,25 +110,25 @@
 
 	<div class="row childNodeAdm">
 		<div class="childNodeAdm dropdown-menu" id=form2>
-			<form class="px-4 py-3 childNodeAdm">
+			<form action="./admin.html" class="px-4 py-3 childNodeAdm">
 				<div class="form-group childNodeAdm">
-					<label for="exampleDropdownFormEmail2">ADMIN Email address</label> <input
-						type="email" class="form-control" id="exampleDropdownFormEmail2"
-						placeholder="email@boaterrani.com">
+					<label for="exampleDropdownFormEmail2">ADMIN Email address</label>
+					<input type="email" class="form-control"
+						id="exampleDropdownFormEmail2" placeholder="email@boaterrani.com">
 				</div>
 				<div class="form-group">
 					<label for="exampleDropdownFormPassword">Password</label> <input
 						type="password" class="form-control"
 						id="exampleDropdownFormPassword">
 				</div>
-			
+
 				<button type="submit" class="btn btn-primary">Sign in</button>
 			</form>
+
 			<div class="dropdown-divider"></div>
 			<a class="dropdown-item" href="#">Forgot password?</a><br /> <a
-				class="dropdown-item grandparentNodeAdm" style="color: red;"
-				href="#">Close Form</a><br /> 
-				<a class="dropdown-item" href="#"></a>
+				class="dropdown-item closer" style="color: red;" href="#">Close
+				Form</a><br /> <a class="dropdown-item"></a>
 		</div>
 	</div>
 
