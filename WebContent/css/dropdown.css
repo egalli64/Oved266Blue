@@ -40,23 +40,8 @@
   background: linear-gradient(to bottom, #69c4e8, #21a1d4);
   box-shadow: inset 0 -3px 0 #1f97c7, inset 0 -3px 3px #1f9acc, inset 0 2px 2px #9ad7ef, inset 1px 0 2px #22a4d9, inset -1px 0 2px #22a4d9, 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 3px 3px rgba(0, 0, 0, 0.17), 2px 1px 2px rgba(0, 0, 0, 0.05), -2px 1px 2px rgba(0, 0, 0, 0.05);
 }
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center ul ul {
-  text-align: left;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu.align-right ul ul {
-  text-align: right;
-}
+
+
 #cssmenu > ul > li {
   float: left;
 }
@@ -75,39 +60,20 @@
   -o-transition: color .2s ease;
   transition: color .2s ease;
 }
+
+
+/* Color of elements with dropdowns */
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a {
   color: #cae5fd;
 }
+
+/* Spacing of elements on the bar */
 #cssmenu > ul > li.has-sub > a {
   padding-right: 40px;
 }
-#cssmenu ul > li.has-sub > a:after {
-  content: '';
-  position: absolute;
-  right: 5px;
-  top: 17.5px;
-  display: block;
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
-  background: #3db2e1;
-  background: -webkit-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: -ms-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: -moz-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: -o-linear-gradient(top, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  background: linear-gradient(to bottom, #58bde5 0%, #4ab7e3 25%, #2babde 50%, #58bde5 75%, #4ab7e3 100%);
-  box-shadow: inset 0 -1px 1px #209ed0, inset 0 2px 1px #7fcceb;
-  background-size: 36px 36px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  -webkit-transition: all 0.1s ease-out;
-  -moz-transition: all 0.1s ease-out;
-  -ms-transition: all 0.1s ease-out;
-  -o-transition: all 0.1s ease-out;
-  transition: all 0.1s ease-out;
-}
+
 #cssmenu ul > li.has-sub:hover > a:after {
   background-position: 0 -18px;
 }
@@ -123,9 +89,13 @@
   border-top-color: #ffffff;
   z-index: 99;
 }
+
 #cssmenu ul > li.has-sub:hover > a:before {
   border-top-color: #19799f;
 }
+
+
+/* Hide Dropdown elements */
 #cssmenu ul ul {
   position: absolute;
   left: -9999px;
@@ -136,35 +106,17 @@
   -o-transition: top .2s ease, opacity .2s ease;
   transition: top .2s ease, opacity .2s ease;
 }
-#cssmenu > ul > li > ul {
-  top: 91px;
-  padding-top: 8px;
-  border-radius: 5px;
-}
+
+
+/* Dropdowns appears at hover */
 #cssmenu > ul > li:hover > ul {
   left: auto;
   top: 51px;
   opacity: 1;
 }
-#cssmenu.align-right > ul > li:hover > ul {
-  right: 0;
-}
-#cssmenu ul ul ul {
-  top: 40px;
-}
-#cssmenu ul ul > li:hover > ul {
-  top: 0;
-  left: 178px;
-  padding-left: 10px;
-  opacity: 1;
-}
-#cssmenu.align-right ul ul > li:hover > ul {
-  left: auto;
-  right: 178px;
-  padding-left: 0;
-  padding-right: 10px;
-  opacity: 1;
-}
+
+
+/* Dropdown blue border */
 #cssmenu ul ul li a {
   width: 180px;
   padding: 12px 25px;
@@ -180,21 +132,16 @@
   -o-transition: color .2s ease;
   transition: color .2s ease;
 }
+
+/* Change color at hover */
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li > a:hover,
 #cssmenu ul ul li.active > a {
   color: #cae5fd;
 }
-#cssmenu ul ul li:first-child > a {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  box-shadow: inset 0 2px 2px #88d0ed;
-}
-#cssmenu ul ul li:last-child > a {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: inset 0 -3px 0 #27a9de, inset 0 -3px 3px #1f9acc, 0 1px 1px rgba(0, 0, 0, 0.03), 0 2px 2px rgba(0, 0, 0, 0.05), 0 2px 3px rgba(0, 0, 0, 0.13);
-}
+
+
+/* Rounded border in dropdown table */
 #cssmenu ul ul > li.has-sub > a:after {
   right: 12px;
   top: 9.5px;
@@ -209,36 +156,8 @@
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-#cssmenu.align-right ul ul > li.has-sub > a:after {
-  right: auto;
-  left: 12px;
-}
-#cssmenu ul ul > li.has-sub:hover > a:after {
-  background-position: 0 -18px;
-}
-#cssmenu ul ul > li.has-sub > a:before {
-  top: 15.5px;
-  right: 16px;
-  border-top-color: transparent;
-  border-left-color: #ffffff;
-}
-#cssmenu.align-right ul ul > li.has-sub > a:before {
-  top: 15.5px;
-  right: auto;
-  left: 16px;
-  border-top-color: transparent;
-  border-right-color: #ffffff;
-  border-left-color: transparent;
-}
-#cssmenu ul ul > li.has-sub:hover > a:before {
-  border-top-color: transparent;
-  border-left-color: #1c89b5;
-}
-#cssmenu.align-right ul ul > li.has-sub:hover > a:before {
-  border-top-color: transparent;
-  border-left-color: transparent;
-  border-right-color: #1c89b5;
-}
+
+/* Resize Effect */
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
