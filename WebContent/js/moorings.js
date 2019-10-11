@@ -10,7 +10,7 @@ $(function() {
 	
 	for (var i=0; i<c.length; i++) {
 		//let a = $(c[i]).child();
-		console.log(c[i].getElementsByClassName("text-danger"));
+		//console.log(c[i].getElementsByClassName("text-danger"));
 		if(c[i].getElementsByClassName("text-danger").length != 0) {
 			let a = c[i].getElementsByClassName("cartMooring");
 			$(a).hide();		
